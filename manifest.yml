@@ -1,0 +1,6 @@
+name: BurdellBackend
+path: build/libs/BurdellBackend-0.0.1.jar
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+memory: 1G
+services:
+  - burdellbackend-postgre
