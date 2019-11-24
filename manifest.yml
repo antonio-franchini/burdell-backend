@@ -1,6 +1,8 @@
-name: BurdellBackend
-path: build/libs/BurdellBackend-0.0.1.jar
-buildpack: https://github.com/cloudfoundry/java-buildpack.git
-memory: 1G
+name: burdell-backend
+path: build/libs/burdell-backend-0.0.1.jar
+buildpack: https://github.com/cloudfoundry/java-buildpack.git#v4.16
+memory: 1GB
+env:
+  JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'
 services:
-  - burdellbackend-postgre
+  - burdell-postgres

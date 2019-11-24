@@ -7,9 +7,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Part {
 
-  private long partNumber;
-  private long fkOrderId;
-  private String status;
-  private String description;
+    private String partOrderNumber;
+    private String partNumber;
+    private long cost;
+    private String username;
+    private String status;
+    private String vendorName;
+    private String description;
 
 }

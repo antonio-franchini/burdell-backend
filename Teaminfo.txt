@@ -1,0 +1,9 @@
+Team10:
+Antonio Franchini   email: afranchini6@gatech.edu
+Beza Mulualem       email: bmulualem3@gatech.edu
+Joshua Raphael      email: jraphael3@gatech.edu
+Juan Jose Tam-Huang email: jtamhuang3@gatech.edu
+
+burdell-backend/src/main/resources/1__db_tables_creation.sql
+burdell-backend/src/main/resources/2__inserts_enum_tables.sql
+burdell-backend/src/main/resources/3__inserts_all_other_tables.sql

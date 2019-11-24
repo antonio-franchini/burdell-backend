@@ -5,11 +5,11 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class PartOrder {
-
-  private long orderId;
-  private String vendor;
-  private String address;
+public class Vendor {
+  private String name;
   private String phone;
-
+  private String street;
+  private String city;
+  private String state;
+  private String zipCode;
 }

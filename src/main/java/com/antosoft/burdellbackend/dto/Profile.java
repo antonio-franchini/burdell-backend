@@ -7,8 +7,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Profile {
 
-  private String username;
-  private String password;
-  private String role;
+    private String username;
+    private String password;
+    private String permission;
+    private String firstName;
+    private String lastName;
 
 }

@@ -3,13 +3,9 @@ package com.antosoft.burdellbackend.controller;
 import com.antosoft.burdellbackend.dto.Profile;
 import com.antosoft.burdellbackend.repository.ProfileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin
 public class ProfileController {
 
     @Autowired
@@ -18,6 +14,16 @@ public class ProfileController {
     @PostMapping("/login")
     public Profile login(@RequestBody Profile profile) {
         return profileRepository.login(profile);
+    }
+
+    @GetMapping("/getSaleperson/{vin}")
+    public Profile getSaleperson(@PathVariable String vin) {
+        return profileRepository.getSaleperson(vin);
+    }
+
+    @GetMapping("/getInventoryClerk/{vin}")
+    public Profile getInventoryClerk(@PathVariable String vin) {
+        return profileRepository.getInventoryClerk(vin);
     }
 
 }

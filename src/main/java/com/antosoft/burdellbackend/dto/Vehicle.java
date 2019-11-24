@@ -3,9 +3,6 @@ package com.antosoft.burdellbackend.dto;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.sql.Date;
-import java.util.Objects;
-
 @Data
 @NoArgsConstructor
 public class Vehicle {
@@ -14,16 +11,17 @@ public class Vehicle {
     private String type;
     private String make;
     private String model;
-    private String year;
-    private String inventoryClerk;
-    private String saleperson;
+    private long year;
+    private String inventoryClerkName;
+    private String salepersonName;
     private long mileage;
     private String description;
-    private long fkCustomerBuyerId;
-    private long fkCustomerSellerId;
-    private long price;
+    private long purchasePrice;
     private String condition;
     private java.sql.Date purchaseDate;
+    private java.sql.Date saleDate;
+    private long buyerCustomerId;
+    private long sellerCustomerId;
     private String colors;
 
 }

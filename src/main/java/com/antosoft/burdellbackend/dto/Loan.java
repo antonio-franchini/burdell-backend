@@ -7,12 +7,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Loan {
 
-  private long loanId;
-  private java.sql.Date startMonth;
-  private long term;
-  private long payment;
-  private long interest;
-  private long downPayment;
-  private long fkCustomerId;
+    private java.sql.Date startMonth;
+    private long term;
+    private long payment;
+    private long interest;
+    private long downPayment;
+    private long customerId;
+    private String vin;
 
 }
