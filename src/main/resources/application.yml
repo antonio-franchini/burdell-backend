@@ -1,9 +1,12 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/localdb
-    username: name
-    password: password
+    url: jdbc:postgresql://database-2.cwbeko2a3v8y.us-west-1.rds.amazonaws.com:5432/
+    username: postgres
+    password: Intermilan9
+#    url: jdbc:postgresql://localhost:5432/localdb
+#    username: name
+#    password: password
   jpa:
     hibernate.ddl-auto: update
     properties.hibernate.temp.use_jdbc_metadata_defaults: false
